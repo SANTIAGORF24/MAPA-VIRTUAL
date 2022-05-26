@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Montserrat+Alternates|Poppins&display=swap');
+	*{
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		font-family: 'Montserrat Alternates', sans-serif;
+	}
+	body{
+		background-image: url(./mapa\ usb.png);
+		background-size: 100vw 100vh;
+		background-repeat: no-repeat;
+	}
+	.capa{
+		position: fixed;
+		width: 100%;
+		height: 100vh;
+		background: rgba(0,0,0,0.5);
+		z-index: -1;
+		top: 0;left: 0;
+	}
+	/*Estilos para el encabezado*/
+	.header{
+		width: 100%;
+		height: 100px;
+		position: fixed;
+		top: 0;left: 0;
+	}
+	.container{
+		width: 100%;
+		max-width: auto;
+		margin: auto;
+	}
+	.container .btn-menu, .logo{
+		float: left;
+		line-height:100px;
+	}
+	.container .btn-menu label{
+		color: #fff;
+		font-size: 25px;
+		cursor: pointer;
+	}
+	.logo h1{
+		color: #fff;
+		font-weight: 400;
+		font-size: 22px;
+		margin-left: 10px;
+	}
+	.container .menu{
+		float: right;
+		line-height: 100px;
+	}
+	.container .menu a{
+		display: inline-block;
+		padding: 15px;
+		line-height: normal;
+		text-decoration: none;
+		color: #fff;
+		transition: all 0.3s ease;
+		border-bottom: 2px solid transparent;
+		font-size: 15px;
+		margin-right: 5px;
+	}
+
+	/*Fin de Estilos para el encabezado*/
+
+	/*Menù lateral*/
+	#btn-menu{
+		display: none;
+	}
+	.container-menu{
+		position: absolute;
+		background: rgba(0,0,0,0.5);
+		width: 100%;
+		height: 100vh;
+		top: 0;left: 0;
+		transition: all 500ms ease;
+		opacity: 0;
+		visibility: hidden;
+	}
+	#btn-menu:checked ~ .container-menu{
+		opacity: 1;
+		visibility: visible;
+	}
+	.cont-menu{
+		width: 100%;
+		max-width: 250px;
+		background: #1c1c1c;
+		height: 100vh;
+		position: relative;
+		transition: all 500ms ease;
+		transform: translateX(-100%);
+	}
+	#btn-menu:checked ~ .container-menu .cont-menu{
+		transform: translateX(0%);
+	}
+	.cont-menu nav{
+		transform: translateY(15%);
+	}
+	.cont-menu nav a{
+		display: block;
+		text-decoration: none;
+		padding: 20px;
+		color: #ffffff;
+		border-left: 5px solid transparent;
+		transition: all 400ms ease;
+	}
+	.cont-menu label{
+		position: absolute;
+		right: 5px;
+		top: 10px;
+		color: #fff;
+		cursor: pointer;
+		font-size: 18px;
+	}
+	button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    text-align: center;
+    font-size: 16px;
+    align-items: center;
+    background-color: #1c1c1c;
+  }
+
+a {
+    background: none;
+    border-bottom: 1px solid #ffffff;
+    color: #CFD8DC;
+    font-size: 14px;
+    padding: 16px 24px;
+}
+
+a:hover {
+  opacity: 0.3;
+}
+
+#ed1 {
+  top: 20%;
+}
+
+.ed1 button {
+  display: block;
+  position: absolute;
+  top: 60%;
+  left: 72%;
+  background: none;
+}
+
+.ed2 button {
+  display: block;
+  position: absolute;
+  top: 49%;
+  left: 72%;
+  background: none;
+}
+.ed3 button {
+  display: block;
+  position: absolute;
+  top: 38%;
+  left: 69%;
+  background: none;
+}
+
+.ed4 button {
+  display: block;
+  position: absolute;
+  top: 61%;
+  left: 50%;
+  background: none;
+}
+
+.ed5 button {
+  display: block;
+  position: absolute;
+  top: 68%;
+  left: 63%;
+  background: none;
+}
+
+.ed6 button {
+  display: block;
+  position: absolute;
+  top: 44%;
+  left: 33%;
+  background: none;
+}
+.ed7 button {
+  display: block;
+  position: absolute;
+  top: 43%;
+  left: 15%;
+  background: none;
+}
+
+.ed8 button {
+  display: block;
+  position: absolute;
+  top: 54%;
+  left: 54%;
+  background: none;
+}
+
+.ed9 button {
+  display: block;
+  position: absolute;
+  top: 24%;
+  left: 42%;
+  background: none;
+}
+.ed10 button {
+  display: block;
+  position: absolute;
+  top: 70%;
+  left: 73%;
+  background: none;
+}
+.ed11 button {
+  display: block;
+  position: absolute;
+  top: 37%;
+  left: 21%;
+  background: none;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: #1c1c1c solid 3px;
+  border-bottom: #1c1c1c;
+}
+
+.modal-body {
+  align-items: center;
+}
+
+.piso1 a {
+color: #1c1c1c;
+background: none;
+font-size: 20px;
+text-align: center;
+display: block;
+text-decoration: none;
+text-decoration-style: none;
+}
+
+.piso1 a:hover {
+  text-decoration: none;
+text-decoration-style: none;
+opacity: 100%;
+color: black;
+}
+
+hr {
+  color: black;
+}
+
+.piso1 ul li {
+color: #1c1c1c;
+font-size: 15px;
+text-align: center;
+display: block;
+
+}
